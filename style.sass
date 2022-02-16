@@ -1,0 +1,256 @@
+$black: #1C1E21
+$blue: #1877f2
+$green: #42b72a
+$gray: #8a8d91
+
+body, html
+  overflow: hidden
+  height: 100vh
+  width: 100vw
+  margin: 0
+  padding: 0
+  background: #F0F2F5
+  font-family: Helvetica, Arial, sans-serif
+
+body
+  display: flex
+  flex-direction: column
+
+button
+  transition: box-shadow 100ms cubic-bezier(.08,.52,.52,1)
+
+  &:focus
+    box-shadow: 0 0 1px 2px rgba(88, 144, 255, .75), 0 1px 1px rgba(0, 0, 0, .15)
+  
+.main
+  box-sizing: content-box
+  padding-top: 92px
+  padding-bottom: 192px
+  min-height: 64px
+  display: flex
+  width: 980px
+  margin: 0 auto
+
+  &__left
+    box-sizing: border-box
+    padding-right: 32px
+    width: 580px
+
+  &__text
+    margin: -7px 0 20px 0
+    width: 500px
+    font-size: 28px
+    line-height: 32px
+
+  &__logo
+    margin-left: -28px
+    padding: 84px 0 0
+    display: block
+    height: 106px
+
+  &__right
+    width: 396px
+
+  &__form
+    background: #FFFFFF
+    border-radius: 8px
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1)
+    margin-top: 40px
+    padding: 10px 0 24px 0
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  &__create
+    text-align: center
+    font-size: 14px
+    margin: 28px 0 0 0
+
+  &__bold
+    font-weight: 600
+    cursor: pointer
+
+    &:hover
+      text-decoration: underline
+
+.form
+
+  &__input
+    font-family: inherit
+    height: 22px
+    display: block
+    margin: 6px 0
+    border: 1px solid #dddfe2
+    color: $black
+    height: 22px
+    border-radius: 6px
+    font-size: 17px
+    padding: 14px 16px
+    width: 330px
+
+    &::placeholder
+      color:#90949c
+
+    &:focus
+      box-shadow: 0 0 0 2px #e7f3ff
+      caret-color: $blue
+      border-color: $blue
+      outline: none
+
+      &::placeholder
+        color:#bec3c9
+
+  &__button
+    text-decoration: none
+    display: flex
+    justify-content: center
+    align-items: center
+    box-sizing: content-box
+    margin-top: 6px
+    padding: 0 16px
+    width: 332px
+    height: 48px
+    font-size: 20px
+    border: none
+    color: #FFFFFF
+    cursor: pointer
+    border-radius: 6px
+    font-weight: bold
+    font-family: inherit
+    transition: background 200ms cubic-bezier(.08,.52,.52,1), box-shadow 100ms cubic-bezier(.08,.52,.52,1)
+
+    &:focus
+      box-shadow: 0 0 1px 2px rgba(88, 144, 255, .75), 0 1px 1px rgba(0, 0, 0, .15)
+
+    &--blue
+      background: $blue
+
+      &:hover
+        background: #166fe5
+
+      &:active
+        background: #29487d
+
+    &--green
+      background: $green
+
+      &:hover
+        background: #36a420
+
+      &:active
+        background: #2b9217
+
+    &--small
+      font-size: 17px
+      width: max-content
+
+    &--antisocial
+      margin-top: 12px
+
+  &__link
+    color: $blue
+    font-size: 14px
+    font-weight: 500
+    display: block
+    margin-top: 16px
+    text-decoration: none
+
+    &:hover
+      text-decoration: underline
+
+  &__separator
+    width: calc(100% - 32px)
+    margin: 20px 16px
+    border-bottom: 1px solid #dadde1
+
+.footer
+  flex-grow: 1
+  padding-top: 26px
+  background: #FFFFFF
+
+  ul
+    font-size: 0
+    padding: 0
+    list-style-type: none
+
+    li
+      display: inline-block
+
+  &__misc
+    margin: 0 0 0 -20px
+
+    li
+      line-height: 1.6
+      padding-left: 20px
+
+  &__languages
+    margin: 0 0 0 -10px
+
+    li
+      padding-left: 10px
+
+  &__link
+    font-size: 12px
+    color: #8a8d91
+    text-decoration: none
+
+    &:hover
+      text-decoration: underline
+
+    &--selected
+      text-decoration: none
+      cursor: default
+      color: #737373
+
+      &:hover
+        text-decoration: none
+
+  &__wrapper
+    width: 980px
+    margin: 0 auto
+
+  &__button
+    height: 20px
+    border-radius: 2px
+    width: 30px
+    cursor: pointer
+    font-size: 10px
+    background:#f5f6f7
+    border: 1px solid #ccd0d5
+    color: $gray
+
+  &__copyright
+    color: #737373
+    font-size: 11px
+
+  &__separator
+    width: 100%
+    margin-bottom: 8px
+    margin-top: 8px 
+    border-bottom: 1px solid #dadde1
+
+  &__copyright
+    margin: 20px 0
+
+.info
+  background: #F0F2F5
+  transition: 1s transform
+  transition-delay: .5s
+  position: absolute
+  height: 100vh
+  width: 100vw
+  display: flex
+  justify-content: center
+  font-size: 120%
+
+  h2
+    margin-bottom: 10px
+
+  p, ul
+    margin: 10px 0
+
+  &__content
+    width: 960px
+
+  &--hidden
+    transform: translateX(100vw)

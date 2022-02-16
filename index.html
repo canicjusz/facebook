@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl_PL">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Facebook – zaloguj się lub zarejestruj</title>
+    <link rel="stylesheet" href="style.css" />
     <meta
       name="description"
       content="Zaloguj się do Facebooka, aby zacząć udostępniać różne rzeczy oraz łączyć się ze znajomymi, rodziną i ludźmi, których znasz."
     />
     <meta property="og:site_name" content="Facebook" />
-    <meta property="og:url" content="localhost:5500" />
     <meta property="og:locale" content="pl_PL" />
     <meta
       property="og:image"
@@ -22,6 +22,392 @@
     />
   </head>
   <body>
-    siema
+    <main class="main">
+      <div class="main__left">
+        <img
+          src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg"
+          alt="Facebook"
+          class="main__logo"
+        />
+        <p class="main__text">
+          Facebook pomaga kontaktować się z innymi osobami oraz udostępniać im
+          różne informacje i materiały.
+        </p>
+      </div>
+      <div class="main__right">
+        <form action="" class="main__form form">
+          <input
+            type="text"
+            placeholder="Adres e-mail lub numer telefonu"
+            class="form__input"
+          />
+          <input
+            type="password"
+            name=""
+            id=""
+            placeholder="Hasło"
+            class="form__input"
+          />
+          <button
+            class="form__button form__button--blue form__button--antisocial"
+            id="sign-in"
+          >
+            Zaloguj się
+          </button>
+          <a
+            href="https://www.facebook.com/login/identify/?ctx=recover"
+            target="_blank"
+            class="form__link"
+            >Nie pamiętasz hasła?</a
+          >
+          <div class="form__separator"></div>
+          <a
+            class="form__button form__button--green form__button--small"
+            href="https://www.facebook.com/reg"
+            >Utwórz nowe konto</a
+          >
+        </form>
+        <p class="main__create">
+          <b class="main__bold">Utwórz stronę</b>
+          dla gwiazdy, marki lub firmy.
+        </p>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div>
+          <ul class="footer__languages">
+            <li>
+              <a
+                href="javascript:void()"
+                class="footer__link footer__link--selected"
+                >Polski</a
+              >
+            </li>
+            <li>
+              <a href="javascript:void()" class="footer__link">English (US)</a>
+            </li>
+            <li>
+              <a href="javascript:void()" class="footer__link">ślōnskŏ gŏdka</a>
+            </li>
+            <li>
+              <a href="javascript:void()" class="footer__link">Русский</a>
+            </li>
+            <li>
+              <a href="javascript:void()" class="footer__link">Deutsch</a>
+            </li>
+            <li>
+              <a href="javascript:void()" class="footer__link"
+                >Français (France)</a
+              >
+            </li>
+            <li>
+              <a href="javascript:void()" class="footer__link">Italiano </a>
+            </li>
+            <li>
+              <a href="javascript:void()" class="footer__link">Українська </a>
+            </li>
+            <li>
+              <a href="javascript:void()" class="footer__link"
+                >Español (España)</a
+              >
+            </li>
+            <li>
+              <a href="javascript:void()" class="footer__link"
+                >Português (Brasil)</a
+              >
+            </li>
+            <li>
+              <a href="javascript:void()" class="footer__link">العربية</a>
+            </li>
+            <li>
+              <button class="footer__button">➕</button>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__separator"></div>
+        <div>
+          <ul class="footer__misc">
+            <li>
+              <a
+                href="javascript:void()"
+                title="Zarejestruj się na Facebooku"
+                class="footer__link"
+                >Zarejestruj się</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void()"
+                title="Zaloguj się do Facebooka"
+                class="footer__link"
+                >Zaloguj się</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer__link"
+                href="javascript:void()"
+                title="Wypróbuj aplikację Messenger."
+                >Messenger</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void()"
+                title="Facebook Lite dla systemu Android"
+                class="footer__link"
+                >Facebook Lite</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void()"
+                title="Przeglądaj filmy w Watch."
+                class="footer__link"
+                >Watch</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void()"
+                title="Sprawdź najpopularniejsze miejsca na Facebooku."
+                class="footer__link"
+                >Miejsca</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void()"
+                title="Wypróbuj gry na Facebooku"
+                class="footer__link"
+                >Gry</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void()"
+                title="Kupuj i sprzedawaj, korzystając z Marketplace Facebooka."
+                class="footer__link"
+                >Marketplace</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void()"
+                title="Dowiedz się więcej o Facebook Pay"
+                class="footer__link"
+                >Facebook Pay</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void()"
+                title="Dowiedz się więcej o Oculusie"
+                class="footer__link"
+                >Oculus</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void()"
+                title="Dowiedz się więcej na temat urządzenia Portal Facebooka"
+                class="footer__link"
+                >Portal</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void()"
+                title="Sprawdź Instagram"
+                class="footer__link"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void()"
+                title="Sprawdź biuletyn Bulletin"
+                class="footer__link"
+                >Bulletin</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void()"
+                title="Przejrzyj katalog list lokalnych."
+                class="footer__link"
+                >Lokalne</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void()"
+                title="Wpłać datki na szlachetne cele."
+                class="footer__link"
+                >Zbiórki pieniędzy</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void()"
+                title="Przejrzyj nasz katalog usług Facebooka."
+                class="footer__link"
+                >Usługi</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void()"
+                class="footer__link"
+                title="Sprawdź Centrum informacji o głosowaniu."
+                >Centrum informacji o głosowaniu</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void()"
+                title="Przeglądaj nasze grupy."
+                class="footer__link"
+                >Grupy</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void()"
+                title="Przeczytaj nasz blog, odkryj centrum zasobów i znajdź pracę."
+                class="footer__link"
+                >Informacje</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void()"
+                title="Reklama na Facebooku"
+                class="footer__link"
+                >Utwórz reklamę</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void()"
+                title="Utwórz stronę"
+                class="footer__link"
+                >Utwórz stronę</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void()"
+                title="Twórz na naszej platformie."
+                class="footer__link"
+                >Twórcy aplikacji</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void()"
+                title="Buduj swoją karierę w naszej wspaniałej firmie."
+                class="footer__link"
+                >Praca</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void()"
+                title="Dowiedz się więcej o swojej prywatności na Facebooku."
+                class="footer__link"
+                >Prywatność</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void()"
+                title="Dowiedz się więcej na temat plików cookies i Facebooka."
+                class="footer__link"
+                >Pliki cookie</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void()"
+                title="Dowiedz się więcej o opcjach wyświetlania reklamy."
+                class="footer__link"
+                >Opcje wyświetlania reklam</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void()"
+                title="Zapoznaj się z naszym regulaminem i zasadami."
+                class="footer__link"
+                >Regulamin</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void()"
+                title="Odwiedź nasze Centrum pomocy."
+                class="footer__link"
+                class="footer__link"
+                >Pomoc</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright">Meta © 2022</div>
+      </div>
+    </footer>
+    <div class="info info--hidden">
+      <div class="info__content">
+        <h1>Gratulację Użytkowniku! 🎉</h1>
+        <p>
+          Właśnie zostałeś ofiarą phishingu (albo zostałbyś gdyby to nie był
+          projekt szkolny), czyli wyłudzenia poufnych informacji podając się pod
+          inną osobę lub instytucję, w tym przypadku dane dostępu do twojego
+          konta Facebook.
+        </p>
+        <p>
+          Dostęp do twojego konta to nie jedyne co hakerzy zdobędą. Za niedługo
+          twój e-mail byłby zapełniony wiadomościami od Nigeryjskich królów,
+          którzy z chęcią podzielą się częścią swojego bogactwa, lub twój numer
+          telefonu będzię nieustannie atakowany przez sprzedawców garnków.
+          Dodatkowo jeżeli używałeś te same hasło na innych serwisach, bądź
+          pewien, że oszuści też położą łapska na innych twoich kontach.
+        </p>
+        <h2>I co teraz zrobić?</h2>
+        <p>
+          W przypadku Facebook'a należy wejść na
+          <a href="https://pl-pl.facebook.com/help/1216349518398524" target="_blank"
+            >tą stronę</a
+          >
+          w centrum pomocy i postępować z krokami tam wymienionymi. Dodatkowo
+          warto poinformować naszych znajomych o włamaniu na konto, aby nie
+          otwierali żadnych linków, które mogli wysłać oszuści z naszego konta.
+        </p>
+        <p>
+          W przypadku innych serwisów należy skontaktować się ze wsparciem i we
+          własnym zakresie szukać w internecie sposobów na odzyskanie konta.
+          Większość dużych serwisów również ma oficjalne poradniki o tym co
+          robić po przejęciu konta.
+        </p>
+        <h2>Jak uniknąć ataku?</h2>
+        <p>
+          Przeważnie ten rodzaj oszustwa przeprowadzany jest przez pocztę internetową. Dlatego powinniśmy traktować wszystkie wiadomości przychodzące do nas jako zagrożenie, jeżeli jednak nie możesz oprzec się otwarciu strony:
+          <ul>
+            <li>Spójrz czy adres nadawcy ma odpowiednią domenę (np. w przypadku Facebook'a @facebookmail.com).</li>
+            <li>Zwracaj uwagę na wszystkie literówki, dziwnie zniekształcone zdjęcia.</li>
+            <li>Sprawdzaj dokąd prowadzą linki/przyciski najeżdżając na nie.</li>
+            <li>Upewnij się, że wiadomość jest napisana w odpowiednim języku. Jeżeli Facebook mamy ustawiony na język polski, to nie powinniśmy dostawać maili w języku angielskim czy innym.</li>
+            <li>Często korporacje w wiadomościach zwracają się do nas po imieniu lub nazwie użytkownika.</li>
+          </ul>
+          Powinniśmy też uważać na linki wysyłane przez naszych znajomych, lub publikowane na osi czasu (w przypadku Facebook'a).
+        </p>
+        <p>
+          Stronę phishingową możemy również rozpoznać od środka. Strony wysłane przez oszustów, mogą być przekierowywaniami na inne strony. Dlatego będąc już na stronie powinniśmy szczególną uwagę zwrócić na link w górnym pasku oraz kłódeczkę z lewej strony, która symbolizuje szyfrowaną wersję protokołu HTTPS.
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
