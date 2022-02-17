@@ -233,8 +233,9 @@ button
     margin: 20px 0
 
 .info
+  overflow: auto
   background: #F0F2F5
-  transition: 1s transform
+  transition: 1.6s transform
   transition-delay: .5s
   position: absolute
   height: 100vh
@@ -242,6 +243,14 @@ button
   display: flex
   justify-content: center
   font-size: 120%
+  border-left: 2px solid $black
+  transform: translateX(-2px)
+
+  a
+    color: $blue
+
+  h1
+    margin-top: 0
 
   h2
     margin-bottom: 10px
@@ -250,7 +259,9 @@ button
     margin: 10px 0
 
   &__content
+    height: max-content
+    margin: 20px 0
     width: 960px
 
   &--hidden
-    transform: translateX(100vw)
+    transform: translateX(calc(100vw + 2px))

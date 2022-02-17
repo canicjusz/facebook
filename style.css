@@ -333,11 +333,12 @@ button:focus {
 }
 
 .info {
+  overflow: auto;
   background: #F0F2F5;
-  -webkit-transition: 1s -webkit-transform;
-  transition: 1s -webkit-transform;
-  transition: 1s transform;
-  transition: 1s transform, 1s -webkit-transform;
+  -webkit-transition: 1.6s -webkit-transform;
+  transition: 1.6s -webkit-transform;
+  transition: 1.6s transform;
+  transition: 1.6s transform, 1.6s -webkit-transform;
   -webkit-transition-delay: .5s;
           transition-delay: .5s;
   position: absolute;
@@ -350,6 +351,17 @@ button:focus {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 120%;
+  border-left: 2px solid #1C1E21;
+  -webkit-transform: translateX(-2px);
+          transform: translateX(-2px);
+}
+
+.info a {
+  color: #1877f2;
+}
+
+.info h1 {
+  margin-top: 0;
 }
 
 .info h2 {
@@ -361,11 +373,15 @@ button:focus {
 }
 
 .info__content {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 20px 0;
   width: 960px;
 }
 
 .info--hidden {
-  -webkit-transform: translateX(100vw);
-          transform: translateX(100vw);
+  -webkit-transform: translateX(calc(100vw + 2px));
+          transform: translateX(calc(100vw + 2px));
 }
 /*# sourceMappingURL=style.css.map */
